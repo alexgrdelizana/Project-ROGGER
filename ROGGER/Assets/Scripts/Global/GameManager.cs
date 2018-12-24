@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameManager
 {
+    public event System.Action<Player> OnPlayerJoined;
     private GameObject gameObject;
     private static GameManager m_Instance;
     public static GameManager Instance
@@ -26,6 +27,20 @@ public class GameManager
         {
             if (m_InputController == null) m_InputController = gameObject.GetComponent<InputController>();
             return m_InputController;
+        }
+    }
+
+    private Player m_Player;
+    public Player Player
+    {
+        get
+        {
+            return m_Player;
+        }
+        set
+        {
+            m_Player = value;
+            if(OnPlayerJoined != null) OnPlayerJoined(m_Player);
         }
     }
 }

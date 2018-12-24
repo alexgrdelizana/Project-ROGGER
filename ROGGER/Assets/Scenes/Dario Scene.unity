@@ -276,7 +276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bdec44621a1a1a42ae0f5e2392e1239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1796909483}
   offset: {x: -5, y: 5, z: -5}
   smoothSpeed: 12.5
 --- !u!1 &710666530
@@ -415,7 +414,7 @@ GameObject:
   - component: {fileID: 1796909484}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
